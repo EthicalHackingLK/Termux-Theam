@@ -87,7 +87,8 @@ case $t_optn in
 	01 | 1)
 		echo " "
 		echo -e "${r} Default ";;
-	02 | 9)
+
+	02 | 2)
 		echo " "
 		echo -e "${r} Powlerlevel10k"
 		cd ~ 
@@ -96,14 +97,13 @@ case $t_optn in
 		echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 		;;
-
-	03)
+	14)
 		echo " "
 		echo -e "${o}[${r}~${o}] ${g} Enter name of theme: "
 		read t_name 
 		theme $t=name ;;
-	04)
-		echo "Ethical Hacking LK ";;
+	15)
+		echo "i am prince ";;
 	*)
 		echo -e "${r} Invalid option";;
 esac
