@@ -1,5 +1,4 @@
 # Termux-Theam
-#Ethical Hacking LK
 
 <code>pkg update && upgrade</code>
 
