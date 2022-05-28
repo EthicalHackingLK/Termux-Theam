@@ -11,7 +11,7 @@ w="\e[0;1m"
 #Color coding end here 
 #Make a function to exit the program ---
 user_intrupt(){
-	echo -e "${r} ______Ethical Hacking LK_______"
+	echo -e "${r} ______Exiting M_KIT _______"
 	sleep 2
 	exit
 }
@@ -52,7 +52,7 @@ clear
 #Make a banner for the m kit tool
 banner(){
 	clear
-	echo -e "${r}
+	echo -e "${g}
 
 ▀█▀ █▀▀ █▀█ █▀▄▀█ █░█ ▀▄▀ ▄▄ ▀█▀ █░█ █▀▀ ▄▀█ █▀▄▀█
 ░█░ ██▄ █▀▄ █░▀░█ █▄█ █░█ ░░ ░█░ █▀█ ██▄ █▀█ █░▀░█
@@ -77,7 +77,8 @@ echo -e "\n"
 
 echo -e "${g}[${o}01${g}] ${w} Default"
 echo -e "${g}[${o}02${g}] ${w} Powerlevel10k"
-echo -e "${g}[${o}03${g}] ${w} About me"
+echo -e "${g}[${o}03${g}] ${w} custum"
+echo -e "${g}[${o}04${g}] ${w} About me"
 echo " "
 #Handle user input --------
 echo -ne "${o}[${r}~${o}] ${w} Select any : "
@@ -86,8 +87,7 @@ case $t_optn in
 	01 | 1)
 		echo " "
 		echo -e "${r} Default ";;
-
-	02 | 2)
+	02 | 9)
 		echo " "
 		echo -e "${r} Powlerlevel10k"
 		cd ~ 
@@ -96,9 +96,36 @@ case $t_optn in
 		echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 		;;
+
 	03)
+		echo " "
+		echo -e "${o}[${r}~${o}] ${g} Enter name of theme: "
+		read t_name 
+		theme $t=name ;;
+	04)
 		echo "Ethical Hacking LK ";;
 	*)
+		echo -e "${r} Invalid option";;
+esac
+#Now change the termux backgeound-----
+#Make a function to handle user background choise---
+back(){
+	echo -e "${w} Changing background"
+	cd $sfs/m_kit 
+	cp OMX/$1/colors.properties ~/.termux
+
+
+}
+echo -e "${w} Change Background "
+echo ""
+echo -e "${r}[${w}01${r}] ${g} Default "
+echo " "
+echo -ne "${o}[${r}~${o}] ${w} Select any : "
+read b_optn
+if [[ $b_optn == 1 || $b_optn == 01 ]];then
+	echo " "
+else 
+	echo -e "${r} Invalid option"
 
 fi
 cd ~ 
