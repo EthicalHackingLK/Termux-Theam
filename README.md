@@ -1,11 +1,37 @@
 # Termux-Theam
 
-<h1>[+]Command List</h1>
+## [+]🚨Command List🚨
 
-<code>pkg update && upgrade</code>
 
-<code>pkg install git</code>
 
-<code>git clone https://github.com/EthicalHackingLK/Termux-Theam.git</code>
+```
+pkg update && upgrade
+```
 
-<code>python3 main.py</code>
+
+```
+pkg install git
+```
+
+
+```
+pkg update && upgrade
+```
+
+
+```
+pkg install git
+```
+
+
+```
+git clone https://github.com/EthicalHackingLK/Termux-Theam.git
+```
+
+```
+cd Termux-Theam
+```
+
+```
+bash main.sh
+```
